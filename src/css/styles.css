@@ -8,6 +8,7 @@ ul {
   list-style: none;
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -40,7 +41,7 @@ body {
 .img_flag{
   width: 60px;
   height: auto;
-
+  margin-right: 10px;
 }
 .boxFlag{
   display: flex;
@@ -49,7 +50,9 @@ body {
 }
 .countryName{
   display: block;
-  margin-left: 30px;
   font-size: 20px;
   font-weight: 700;
+}
+.addOneCountry{
+  display: block;
 }
