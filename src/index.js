@@ -31,12 +31,12 @@ input.addEventListener('input', debounce((e)=>{
         }
     })
     
-    .catch((error)=>{
-        // if(serchCountry === ""){
-        //     return
-        // }
-        Notify.failure("нет такого");
-    })
+    // .catch((error)=>{
+    //     if(serchCountry === ""){
+    //         return
+    //     }
+    //     Notify.failure("нет такого");
+    // })
 }, DEBOUNCE_DELAY))
 
 
