@@ -32,9 +32,9 @@ input.addEventListener('input', debounce((e)=>{
     })
     
     .catch((error)=>{
-        if(serchCountry === ""){
-            return
-        }
+        // if(serchCountry === ""){
+        //     return
+        // }
         Notify.failure("нет такого");
     })
 }, DEBOUNCE_DELAY))
