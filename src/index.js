@@ -9,8 +9,9 @@ const ul = document.querySelector('.country-list')
 
 input.addEventListener('input', debounce((e)=>{
     let serchCountry = e.target.value.trim()
-    console.log(serchCountry)
-    clearContainer()
+    if(serchCountry === ""){
+        return
+    }
     fetchCountries(serchCountry)
     .then((response)=>{
         clearContainer()
@@ -37,6 +38,8 @@ input.addEventListener('input', debounce((e)=>{
         }
         Notify.failure("нет такого");
     })
+    clearContainer()
+    
 }, DEBOUNCE_DELAY))
 
 
